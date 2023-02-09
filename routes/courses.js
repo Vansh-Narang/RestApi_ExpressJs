@@ -5,7 +5,7 @@ const router = ex.Router()
 const Course = require("../models/course")
 
 //Get all the courses
-router.get('/cour', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const courses = await Course.find()
         res.json(courses);

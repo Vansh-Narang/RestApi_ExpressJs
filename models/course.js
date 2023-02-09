@@ -3,7 +3,7 @@
 const mongoose = require("mongoose");
 
 
-const Course = mongoose.Schema({
+const Course = new mongoose.Schema({
     title: String,
     content: String,
     videos: Number,
